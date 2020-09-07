@@ -1,0 +1,378 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 50px;
+    
+  }
+.block-1 {
+    background-color: #2F3030;
+    height: 60vh;
+
+    position: relative;
+    top: 120%;
+}
+.block-1>div {
+    position: relative;
+    top: 20%;
+}
+
+
+.top-slogan,
+.bottom-slogan {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "Lato";
+}
+
+.top-slogan::after,
+.top-slogan::before {
+    content: "";
+    background: #fff;
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+h1 {
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: 900;
+    font-family: "Lato";
+    text-align: center;
+}
+
+.strike {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap; 
+}
+
+.strike > p {
+    position: relative;
+    display: inline-block;
+}
+
+.strike > p:before,
+.strike > p:after {
+    content: "";
+    position: absolute;
+    top: 60%;
+    width: 99px;
+    /* Here is the modification */
+    height: 4px; /* space between lines */
+    margin-top: -2px; /* adjust vertical align */
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.strike > p:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.strike > p:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+.main-button {
+    border: 1px solid #fff;
+    background: #2F3030;
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "Lato";
+    text-align: center;
+    transition: 1s;
+}
+.main-button:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    font-size: 16px;
+}
+
+.main-button-block {
+    margin-top: 5%;
+}
+
+.ul-width {
+    width: 49vh;
+}
+.nav-item {
+    text-transform: uppercase ;
+}
+
+.block-2 {
+    background-color: #ecf0f1;
+    background-image: linear-gradient(45deg,rgba(0, 0, 0, 0) 48%,rgba(0, 0, 0, 0.2) 50%,rgba(0, 0, 0, 0) 52%),linear-gradient(-45deg,rgba(0, 0, 0, 0) 48%,rgba(0, 0, 0, 0.2) 50%,rgba(0, 0, 0, 0) 52%);
+    background-size: 1em 1em;
+}
+.line {
+    width: 15%;
+    margin: 30px 0;
+    border-bottom: 1px solid gray;
+    display: inline-block;
+    
+}
+.header-2 {
+    margin-top: 60px;
+    font-size: 44px;
+    color: #000000;
+    font-weight: 300;
+    font-family: "Lato";
+    text-align: center;
+}
+.icons {
+    width: 100%;
+    text-align: center;
+    margin: 60px 0 0 0;
+    padding-bottom: 60px;
+}
+.icons > div > i {
+    font-size: 60px;
+}
+.icons > div > p {
+    margin-top: 15px;
+}
+.icons > div > i:hover {
+    color: blue;
+}
+/*Мабуть костиль, але для практики щоб згадати псевдокласи підійде*/
+.icons div:nth-child(3) {
+    color: #2980B9;
+}
+.icons div:nth-child(3) > i {
+    font-size:70px;
+}
+.icons div:nth-child(3) > p {
+    margin-top: 5px;
+}
+
+/* Plagin for  https://itchief.ru/examples/lab.php?topic=javascript&file=chiefslider-example-2*/
+
+.slider {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slider__wrapper {
+    display: flex;
+    transition: transform 0.6s ease;
+  }
+
+  .slider__item {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+
+  .slider__control {
+    position: absolute;
+    top: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+    height: 50px;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, .5);
+  }
+
+  .slider__control_show {
+    display: flex;
+  }
+
+  .slider__control:hover,
+  .slider__control:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    opacity: .9;
+  }
+
+  .slider__control_left {
+    left: 0;
+  }
+
+  .slider__control_right {
+    right: 0;
+  }
+
+  .slider__control::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+  }
+
+  .slider__control_left::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  }
+
+  .slider__control_right::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+  }
+
+  .slider__wrapper>div {
+    text-align: center;
+  }
+  /*щоб підігнати під 1 розмір, але виглядає розмито*/
+  /* .slider__item img {
+      width: 100%;
+  } */
+
+  .slider-row {
+      margin: 45px 0;
+  }
+.footer-block {
+    background: black;
+    padding: 15px 0;
+}
+.footer-block i {
+    color:#666666;
+    font-size: 26px;
+    margin: 0 10px;
+   
+}
+#footer {
+    position: absolute; 
+    right: 0;
+    left: 0;
+    bottom:0;
+    height: 50px;
+    padding-top: 50px;
+  }
+.footer-block p {
+    color: #666666;
+    margin: 0;
+    text-align: end;
+}
+.wr-icon {
+    position: absolute;
+    font-size: 32px;
+    top: 0px;
+   
+}
+
+.services-content p {
+    margin-bottom: 5px;
+}
+.services-content a {
+    text-decoration: underline;
+    color: #666666;
+}
+.services div:nth-child(odd) {
+    padding-right: 50px;
+}
+.services div:nth-child(even) {
+    padding-left: 50px;
+}
+.services div {
+    margin: 10px 0;
+}
+.services-content {
+    text-align: start;
+    padding-left: 45px;
+}
+.portfolio-content {
+    height: 230px;
+    overflow: hidden;
+    margin: 20px;
+
+}
+.portfolio-content img {
+    width: 100%;
+
+}
+.portfolio h3{
+    text-align: center;
+}
+.portfolio {
+    margin-bottom: 40px;
+}
+.pfoto-img img {
+    width: 100%;
+}
+.our-team > div {
+    text-align: center;
+    margin: 15px 0;
+
+}
+.our-team > div > h3 {
+    font-size: 16px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Open Sans";
+    margin-top: 15px;
+}
+.our-team > div > p {
+    font-size: 14px;
+    line-height: 22px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Open Sans";
+}
+.contact-team > a > i{
+    margin: 0 10px;
+    color: black;
+}
+.btn-custom-1{
+    width: 200px;
+}
+.form-group input {
+    background-color: #EDF1F2;
+}
+.form-group textarea {
+    background-color: #EDF1F2;
+    height: 300px;
+    resize: none; 
+}
+.address {
+    margin: 20px 0;
+}
+.address p {
+    margin-bottom: 0;
+}
+.map-responsive{
+    overflow:hidden;
+    position:relative;
+    height:280px;
+}
+
+  @media (max-width: 768px) {
+    .slider__item {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      h1 {
+          font-size: 30px;
+      }
+      .services div:nth-child(odd) {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .services div:nth-child(even) {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .services-content h3 {
+        text-align: center;
+    }
+    .portfolio-content {
+        height: 150px;
+  
+    }
+  }
